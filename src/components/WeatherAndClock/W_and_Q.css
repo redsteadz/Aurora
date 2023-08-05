@@ -18,7 +18,7 @@
 }
 
 .time{
-    font-size: 5.5vw;
+    font-size: 8vmax;
     font-family: 'Montserrat';
     letter-spacing: 3px;
     margin-bottom: 0px;
@@ -28,12 +28,12 @@
                  darkblue 5px 5px 16px,
                  lightblue 0  -2px 4px
     ; */
-    -webkit-text-stroke: aliceblue 0.3vb;
+    -webkit-text-stroke: aliceblue 0.15rem;
 }
 
 
 .date{
-    font-size: 2.8vw;
+    font-size: 4vmax;
     font-family: 'Montserrat';
     font-weight: 500;
   color: #131519;
@@ -77,7 +77,7 @@
     text-align: center;
   color: #131519;
     /* text-shadow: #75a1f1 0px 4px 2px, cadetblue 0px -2px 4px; */
-    font-size: 2.4vw;
+    font-size: 3.4vmax;
 }
 
 .weather_container{
@@ -87,4 +87,10 @@
 
 .weather_icon{
     filter: grayscale(100%);
+}
+
+@media (max-width:1000px) {
+    .q_container{
+        display: none;
+    }
 }

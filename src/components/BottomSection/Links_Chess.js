@@ -86,7 +86,7 @@ function BottomContainer(){
     return(
         <div className='bottom_container'>
             <Links />
-            <GitHubCalendar username='redsteadz' blockSize={24} style={{fontFamily:'Montserrat', margin:'3vh', fontWeight:'600', borderColor:'white'}} theme={colourTheme} transformData={selectLastHalfYear} labels={{totalCount:'{{count}} contributions in the last half year'}} />
+            <GitHubCalendar username='redsteadz' blockSize={24} style={{fontFamily:'Montserrat', margin:'3vh', fontWeight:'600', borderColor:'white', fontSize:'3.4vmax'}} theme={colourTheme} transformData={selectLastHalfYear} labels={{totalCount:'{{count}} contributions in the last half year'}} />
         </div>
     )
 }

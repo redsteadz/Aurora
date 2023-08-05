@@ -73,3 +73,8 @@
 }
 
 
+@media (max-width:1000px) {
+    .link_section{
+        display: none;
+    }
+}

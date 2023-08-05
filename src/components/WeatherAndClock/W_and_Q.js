@@ -1,7 +1,7 @@
 import './W_and_Q.css'
 import { useEffect, useState } from 'react';
 function Weather(){
-    const api_url = "http://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=APIKEY"
+    const api_url = "https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=APIKEY"
     const [data, setData] = useState([])
     async function fetchData(){
         const res = await fetch(api_url);
@@ -19,7 +19,6 @@ function Weather(){
     return (
     // Here comes the weather
     <div className='weather_container'>
-    <img className='weather_icon' src='https://openweathermap.org/img/wn/10d@2x.png' alt='weather-icon'></img>
     <h1 className='weather base'>  {temp} {weather} </h1>
     </div>
     )
@@ -36,7 +35,7 @@ const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
         }, 1000);
         return()=>{clearInterval(timerID)}
     }, [])
-    var clock_time = time.toLocaleTimeString();
+    var clock_time = time.toLocaleTimeString(navigator.language, {hour:'2-digit', minute:'2-digit'});
     var clock_date = time.getDate();
     var clock_month= months[time.getMonth()];
     return (
