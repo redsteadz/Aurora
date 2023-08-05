@@ -12,11 +12,11 @@
 .search_bar{
     border: 3px solid cyan;
     width: 40vw;
-    height: 2.4vh;
+    height: 3.4vh;
     border-radius: 20px;
     text-align: center;
     color: aliceblue;
-    font-size: 2vb;
+    font-size: 2.5vb;
     background-image: url("./searchIcon.svg");
     background-color: transparent;
     background-repeat: no-repeat;
