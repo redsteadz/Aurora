@@ -1,0 +1,31 @@
+
+.nav_bar{
+    background-color: transparent;
+}
+.nav_container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0px 0;
+    background-color: transparent;
+}
+
+.search_bar{
+    border: 3px solid cyan;
+    width: 20vw;
+    height: 2.4vh;
+    border-radius: 20px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.4vw;
+    background-image: url("./searchIcon.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    transition: width .3s, border .3s;
+}
+
+.search_bar:focus {
+    width: 25vw;
+    border-width: 0px 0px 3px 0px;
+}

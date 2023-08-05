@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat+Brush:regular);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Glory:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root{
+    color: aliceblue;
+}
+.base{
+    color: aliceblue;
+}
+
+.main_container{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.time{
+    font-size: 5.5vw;
+    font-family: 'Montserrat';
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    color: #131519;
+    font-weight: 800;
+    /* text-shadow: #75a1f1 3px 3px 10px,
+                 darkblue 5px 5px 16px,
+                 lightblue 0  -2px 4px
+    ; */
+    -webkit-text-stroke: aliceblue 0.3vb;
+}
+
+
+.date{
+    font-size: 2.8vw;
+    font-family: 'Montserrat';
+    font-weight: 500;
+  color: #131519;
+    /* text-shadow: #75a1f1 0px 4px 2px, cadetblue 0px -2px 4px; */
+    -webkit-text-stroke: rgb(0, 136, 255) 0.16vb;
+    margin: -1px auto auto auto;
+}
+
+.q_container{
+    text-align: center;
+    width: 60vw;
+    margin: 0px;
+}
+
+.qotd{
+    font-family: 'Montserrat';
+    margin: 0px;
+    color: #131519;
+    -webkit-text-stroke: aliceblue 0.16vb;
+    font-weight: bold;
+    /* text-shadow: #75a1f1 3px 3px 6px,
+                 darkblue 5px 5px 10px,
+                 lightblue 0  -2px 4px; */
+    font-size: 2.6vw;
+}
+.author{
+    color: #131519;
+    -webkit-text-stroke:  rgb(0, 136, 255) 0.12vb;
+    /* text-shadow: #75a1f1 0px 7px 2px, cadetblue 0px -1px 5px; */
+}
+
+.wt_container{
+    text-align: center;
+    width: 50vw;
+    margin: 30px 0 30px 0;
+}
+
+.weather{
+    -webkit-text-stroke: rgb(0, 136, 255) 0.16vb;
+    font-family: "Montserrat";
+    text-align: center;
+  color: #131519;
+    /* text-shadow: #75a1f1 0px 4px 2px, cadetblue 0px -2px 4px; */
+    font-size: 2.4vw;
+}
+
+.weather_container{
+    display: flex;
+    justify-content: center;
+}
+
+.weather_icon{
+    filter: grayscale(100%);
+}
