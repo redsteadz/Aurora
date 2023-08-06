@@ -1,12 +1,27 @@
 import './W_and_Q.css'
 import { useEffect, useState } from 'react';
 import {TiWeatherCloudy} from 'react-icons/ti'
+import {IoIosSunny} from 'react-icons/io'
+import {BiCloudLightRain, BiCloudRain} from 'react-icons/bi'
+import {RiMistFill} from 'react-icons/ri'
+import {WiThunderstorm} from 'react-icons/wi'
+import {BsSnow3, BsCloudSlash} from 'react-icons/bs'
+import { IconContext } from 'react-icons';
 
 function Weather(){
     const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=' + process.env.REACT_APP_WEATHER_API
     console.log(api_url)
-    const [data, setData] = useState({"weather":[{"main":"---","description":"broken clouds","icon":"04d"}],"main":{"temp":'%'}})
-
+    const [data, setData] = useState({"weather":[{"main":"default","description":"broken clouds","icon":"04d"}],"main":{"temp":'%'}})
+    const icons = {
+        'default'      : <BsCloudSlash />,
+        'Thunderstorm' : <WiThunderstorm />,
+        'Drizzle'      : <BiCloudLightRain />,
+        'Rain'         : <BiCloudRain />,
+        'Snow'         : <BsSnow3 />,
+        'Atmosphere'   : <RiMistFill />,
+        'Clear'        : <IoIosSunny />,
+        'Clouds'       : <TiWeatherCloudy />
+    }
     async function fetchInfo(){ 
         const res = await fetch(api_url);
         const d = await res.json();
@@ -15,11 +30,11 @@ function Weather(){
     useEffect(()=>{
         fetchInfo();
     }, [])
-   let temperature= data.main.temp - 273.15; temperature = temperature.toFixed(1); let weather = data.weather[0].main
+   let temperature= data.main.temp - 273.15; temperature = temperature.toFixed(1); let weather = data.weather[0].description; let main = data.weather[0].main
     return(
     // Here comes the weather
     <div className='weather_container'>
-    <h1 className='weather base'>  {temperature} {weather} <TiWeatherCloudy fill='#0388ff' strokeWidth={'1px'} /> </h1>
+    <h1 className='weather base'>  {temperature} {weather}  <IconContext.Provider value={{className: "weather_icons"}}> {icons[main]} </IconContext.Provider> </h1>
     </div>
     )
 }

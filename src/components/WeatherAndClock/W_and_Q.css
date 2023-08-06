@@ -88,8 +88,9 @@
     justify-content: center;
 }
 
-.weather_icon{
-    filter: grayscale(100%);
+.weather_icons{
+   fill: rgb(0, 136, 255); 
+   stroke-width: 1px;
 }
 
 @media (max-width:1000px) {
