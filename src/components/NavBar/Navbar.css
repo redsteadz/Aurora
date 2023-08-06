@@ -5,27 +5,47 @@
 .nav_container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 30px 0 0px 0;
     background-color: transparent;
 }
 
 .search_bar{
-    border: 3px solid cyan;
     width: 40vw;
     height: 3.4vh;
-    border-radius: 20px;
     text-align: center;
+    border: none;
+    outline: none;
     color: aliceblue;
     font-size: 2.5vb;
-    background-image: url("./searchIcon.svg");
     background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
+    border-radius: 20px;
     background-position: right;
-    transition: width .3s, border .3s;
+    transition: all .3s ease-in-out;
+    
 }
 
-.search_bar:focus {
+.search_bar:active{
+    border: none;
+}
+
+.search_bar:focus{
     width: 50vw;
-    border-width: 0px 0px 3px 0px;
+}
+
+.searchForm{
+    border: 3px solid cyan;
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+
+
+.search_icon{
+    margin-left: 4px;
 }

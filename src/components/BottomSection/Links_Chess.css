@@ -18,6 +18,11 @@
     height: fit-content;
     width: 13vw;
     padding: 0;
+    transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.link_list:hover{
+    width: 14vw;
 }
 
 .link_item{
