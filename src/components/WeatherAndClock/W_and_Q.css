@@ -72,6 +72,9 @@
 }
 
 .weather{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     -webkit-text-stroke: rgb(0, 136, 255) 0.16vb;
     font-family: "Montserrat";
     text-align: center;

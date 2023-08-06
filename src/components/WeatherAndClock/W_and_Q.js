@@ -1,25 +1,25 @@
 import './W_and_Q.css'
 import { useEffect, useState } from 'react';
+import {TiWeatherCloudy} from 'react-icons/ti'
+
 function Weather(){
-    const api_url = "https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=APIKEY"
-    const [data, setData] = useState([])
-    async function fetchData(){
+    const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=' + process.env.REACT_APP_WEATHER_API
+    console.log(api_url)
+    const [data, setData] = useState({"weather":[{"main":"---","description":"broken clouds","icon":"04d"}],"main":{"temp":'%'}})
+
+    async function fetchInfo(){ 
         const res = await fetch(api_url);
         const d = await res.json();
         return setData(d); 
-    }
-    let temp = 1.0;
-    let weather = "weather"
-    let icon = "icon"
+        }
     useEffect(()=>{
-        fetchData();
+        fetchInfo();
     }, [])
-   // if(data != []) {temp=data.main.temp - 273.15; temp = temp.toFixed(1); weather = data.weather[0].main}
-    
-    return (
+   let temperature= data.main.temp - 273.15; temperature = temperature.toFixed(1); let weather = data.weather[0].main
+    return(
     // Here comes the weather
     <div className='weather_container'>
-    <h1 className='weather base'>  {temp} {weather} </h1>
+    <h1 className='weather base'>  {temperature} {weather} <TiWeatherCloudy fill='#0388ff' strokeWidth={'1px'} /> </h1>
     </div>
     )
 }
