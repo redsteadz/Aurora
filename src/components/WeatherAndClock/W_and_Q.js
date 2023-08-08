@@ -4,7 +4,7 @@ import {TiWeatherCloudy} from 'react-icons/ti'
 import {IoIosSunny} from 'react-icons/io'
 import {BiCloudLightRain, BiCloudRain} from 'react-icons/bi'
 import {RiMistFill} from 'react-icons/ri'
-import {WiThunderstorm} from 'react-icons/wi'
+import {WiThunderstorm, WiSmoke} from 'react-icons/wi'
 import {BsSnow3, BsCloudSlash} from 'react-icons/bs'
 import { IconContext } from 'react-icons';
 
@@ -18,6 +18,7 @@ function Weather(){
         'Drizzle'      : <BiCloudLightRain />,
         'Rain'         : <BiCloudRain />,
         'Snow'         : <BsSnow3 />,
+        'Smoke'        : <WiSmoke />,
         'Atmosphere'   : <RiMistFill />,
         'Clear'        : <IoIosSunny />,
         'Clouds'       : <TiWeatherCloudy />

@@ -33,12 +33,12 @@ function Links(){
         link:"https://redsteadz.github.io/glowing-computing-machine/"
     },]
 
-    let Link1 = linkList1.map((obj)=>{
-        return (<li className='link_item'><button className='links' onClick={()=>{window.open(obj.link)}}> {obj.name} </button></li>)
+    let Link1 = linkList1.map((obj, i)=>{
+        return (<li className='link_item' key={i}><button className='links' onClick={()=>{window.open(obj.link)}}> {obj.name} </button></li>)
     })
 
-    let Link2 = linkList2.map((obj)=>{
-        return (<li className='link_item'><button className='links' onClick={()=>{window.open(obj.link)}}> {obj.name} </button></li>)
+    let Link2 = linkList2.map((obj, i)=>{
+        return (<li className='link_item' key={i}><button className='links' onClick={()=>{window.open(obj.link)}}> {obj.name} </button></li>)
     })
 
     return (

@@ -89,8 +89,9 @@
 }
 
 .weather_icons{
-   fill: rgb(0, 136, 255); 
-   stroke-width: 1px;
+   color: rgb(0, 136, 255);
+   font-size: 4vmax;
+   stroke-width: 0.1px;
 }
 
 @media (max-width:1000px) {
