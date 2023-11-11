@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Aurora/static/css/main.c58e462b.css",
-    "main.js": "/Aurora/static/js/main.3a8dca2f.js",
+    "main.js": "/Aurora/static/js/main.eb59e36f.js",
     "static/js/787.28cb0dcd.chunk.js": "/Aurora/static/js/787.28cb0dcd.chunk.js",
     "static/media/mandelLong.png": "/Aurora/static/media/mandelLong.abf413ffc3eeb302160e.png",
     "index.html": "/Aurora/index.html",
     "main.c58e462b.css.map": "/Aurora/static/css/main.c58e462b.css.map",
-    "main.3a8dca2f.js.map": "/Aurora/static/js/main.3a8dca2f.js.map",
+    "main.eb59e36f.js.map": "/Aurora/static/js/main.eb59e36f.js.map",
     "787.28cb0dcd.chunk.js.map": "/Aurora/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c58e462b.css",
-    "static/js/main.3a8dca2f.js"
+    "static/js/main.eb59e36f.js"
   ]
 }
