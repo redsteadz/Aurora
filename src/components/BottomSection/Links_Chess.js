@@ -1,4 +1,4 @@
-import './Links_Chess.css'
+import './Links_Chess.css';
 import {MdSportsEsports} from 'react-icons/md';
 import {BsFillGearFill} from 'react-icons/bs'
 import GitHubCalendar from 'react-github-calendar'
@@ -45,13 +45,13 @@ function Links(){
         <div className='link_section'>
             <div className='link_box1'>
                 <ul className='link_list'>
-                    <span className='icon'><MdSportsEsports size={"3vw"} color='#75a1f1' /></span>
+                    <span className='icon'><MdSportsEsports /></span>
                     {Link1}
                 </ul>
             </div>
             <div className='link_box2'>
                 <ul className='link_list'>
-                    <span className='icon'><BsFillGearFill size={"3vw"} color='#75a1f1'/></span>
+                    <span className='icon'><BsFillGearFill/></span>
                    {Link2}
                 </ul>
             </div>
@@ -62,8 +62,13 @@ function Links(){
 
 
 function BottomContainer(){
-    const colourTheme = {
-        dark: ['#1d2127' , '#0085e9']};
+
+const colourTheme = {
+  dark: [
+    '#1E1E28',  // Rosewater
+    '#4da1ff',  // Sapphire
+  ]
+};
 
         // EXPLAIN
     const selectLastHalfYear = contributions => {
@@ -82,11 +87,10 @@ function BottomContainer(){
           );
         });
       };
-
     return(
         <div className='bottom_container'>
             <Links />
-            <GitHubCalendar username='redsteadz' blockSize={24} style={{fontFamily:'Montserrat', margin:'3vh', fontWeight:'600', borderColor:'white', fontSize:'3.4vmax'}} theme={colourTheme} transformData={selectLastHalfYear} labels={{totalCount:'{{count}} contributions in the last half year'}} />
+            <GitHubCalendar username='redsteadz' blockSize={24} style={{fontFamily:'Montserrat', margin:'3vh', fontWeight:'600', color:'white', fontSize:'3.4vmax'}} theme={colourTheme} className='github-calendar' transformData={selectLastHalfYear} labels={{totalCount:'{{count}} contributions in the last half year'}} />
         </div>
     )
 }

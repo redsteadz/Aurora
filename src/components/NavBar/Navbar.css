@@ -1,3 +1,4 @@
+@import '../../palette.css';
 
 .nav_bar{
     background-color: transparent;
@@ -16,13 +17,17 @@
     text-align: center;
     border: none;
     outline: none;
-    color: aliceblue;
+    color: var(--rosewater);
     font-size: 2.5vb;
     background-color: transparent;
     border-radius: 20px;
     background-position: right;
     transition: all .3s ease-in-out;
     
+}
+
+.search_bar::placeholder{
+  color: var(--blue);
 }
 
 .search_bar:active{
@@ -34,7 +39,7 @@
 }
 
 .searchForm{
-    border: 3px solid cyan;
+    border: 3px solid var(--sapphire);
     border-radius: 20px;
     width: fit-content;
     display: flex;
@@ -42,9 +47,6 @@
     justify-content: space-evenly;
     
 }
-
-
-
 
 .search_icon{
     margin-left: 4px;

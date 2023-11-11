@@ -2,11 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Glory:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
 
-:root{
-    color: aliceblue;
-}
 .base{
-    color: aliceblue;
+    color: var(--text);
 }
 
 .main_container{
@@ -22,13 +19,13 @@
     font-family: 'Montserrat';
     letter-spacing: 3px;
     margin-bottom: 0px;
-    color: #131519;
+    color: var(--blue);
     font-weight: 800;
     /* text-shadow: #75a1f1 3px 3px 10px,
                  darkblue 5px 5px 16px,
                  lightblue 0  -2px 4px
     ; */
-    -webkit-text-stroke: aliceblue 0.15rem;
+    -webkit-text-stroke: var(--crust) 0.20rem;
 }
 
 
@@ -36,9 +33,9 @@
     font-size: 4vmax;
     font-family: 'Montserrat';
     font-weight: 500;
-  color: #131519;
+  color: var(--blue);
     /* text-shadow: #75a1f1 0px 4px 2px, cadetblue 0px -2px 4px; */
-    -webkit-text-stroke: rgb(0, 136, 255) 0.16vb;
+    -webkit-text-stroke: var(--crust) 0.16vb;
     margin: -1px auto auto auto;
 }
 
@@ -51,8 +48,8 @@
 .qotd{
     font-family: 'Montserrat';
     margin: 0px;
-    color: #131519;
-    -webkit-text-stroke: aliceblue 0.16vb;
+    color: var(--black);
+    -webkit-text-stroke: var(--blue) 0.16vb;
     font-weight: bold;
     /* text-shadow: #75a1f1 3px 3px 6px,
                  darkblue 5px 5px 10px,
@@ -60,8 +57,8 @@
     font-size: 2.6vw;
 }
 .author{
-    color: #131519;
-    -webkit-text-stroke:  rgb(0, 136, 255) 0.12vb;
+    color: var(--crust);
+    -webkit-text-stroke:  var(--blue) 0.12vb;
     /* text-shadow: #75a1f1 0px 7px 2px, cadetblue 0px -1px 5px; */
 }
 
@@ -75,10 +72,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    -webkit-text-stroke: rgb(0, 136, 255) 0.16vb;
+    -webkit-text-stroke: var(--crust) 0.16vb;
     font-family: "Montserrat";
     text-align: center;
-  color: #131519;
+  color: var(--blue);
     /* text-shadow: #75a1f1 0px 4px 2px, cadetblue 0px -2px 4px; */
     font-size: 3.4vmax;
 }
@@ -89,7 +86,7 @@
 }
 
 .weather_icons{
-   color: rgb(0, 136, 255);
+   color: var(--blue);
    font-size: 4vmax;
    stroke-width: 0.1px;
 }

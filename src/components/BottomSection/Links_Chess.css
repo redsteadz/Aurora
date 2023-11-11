@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Glory:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
 
+
 .link_section{
     display: flex;
 }
@@ -8,7 +9,7 @@
 .link_list{
     list-style: none;
     background-color: transparent;
-    border: rgb(0, 136, 255) solid 1px;
+    border: var(--base) solid 2px;
     border-radius: 10px;
     display: flex;
     margin: 10px;
@@ -37,32 +38,33 @@
 
 .links{
     color: transparent;
-    background-color: #131519;
+    background-color: var(--crust);
     border: none;
     border-radius: 10px;
     font-size: 1.4vw;
     width: 12vw;
     font-family: 'Montserrat';
     -webkit-text-stroke-width: 0.13vb;
-    -webkit-text-stroke-color: rgb(0, 136, 255);
+    -webkit-text-stroke-color: var(--blue);
     text-decoration: none;
     transition: all 0.5s;
 }
 
 .links:hover{
-    background-color: rgb(0, 136, 255);
+    background-color: var(--blue);
     cursor: pointer;
 }
 
 .link_item:hover>button{
-    -webkit-text-stroke-color: white;
-    background-color: rgb(0, 136, 255);
+    -webkit-text-stroke-color: var(--rosewater);
+    background-color: var(--blue);
 }
 
 .icon{
     margin: auto auto 10px auto;
     padding: 10px;
-    
+    font-size: 3vw;
+    color:var(--base);
 }
 
 .bottom_container{
@@ -77,6 +79,26 @@
     width: 50vw;
 }
 
+/* styles.css */
+
+.github-calendar {
+  font-family: 'Montserrat';
+  margin: 3vh;
+  font-weight: 600;
+  color: white;
+  border-color: white;
+  font-size: 3.4vmax;
+}
+
+.github-calendar-catppuccino-theme {
+  --color-bg: #e1d2b4;  /* Light beige background */
+  --color-text: #3e2723;  /* Dark brown text */
+  --color-grade4: #d7ccc8;  /* Light brown */
+  --color-grade3: #a1887f;  /* Medium brown */
+  --color-grade2: #6d4c41;  /* Dark brown */
+  --color-grade1: #4e342e;  /* Very dark brown */
+  --color-grade0: #3e2723;  /* Almost black */
+}
 
 @media (max-width:1000px) {
     .link_section{

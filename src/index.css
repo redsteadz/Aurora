@@ -4,7 +4,8 @@
 }
 
 html{
-  background-image: url("static/Sprinkle.svg");
+  background-image: url("static/mandelLong.png");
+  background-size: 100%;
 }
 body {
   margin: 0;
