@@ -9,8 +9,8 @@ import {BsSnow3, BsCloudSlash} from 'react-icons/bs'
 import { IconContext } from 'react-icons';
 
 function Weather(){
-    const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=' + process.env.REACT_APP_WEATHER_API
-    // const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=' + 'ebcae38038b0f32a9b8aefe5d17ede39'
+    // const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=' + process.env.REACT_APP_WEATHER_API
+    const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=' + 'ebcae38038b0f32a9b8aefe5d17ede39'
     // console.log(api_url)
     const [data, setData] = useState({"weather":[{"main":"default","description":"broken clouds","icon":"04d"}],"main":{"temp":'%'}})
     const icons = {

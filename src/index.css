@@ -5,7 +5,7 @@
 
 html{
   background-image: url("static/mandelLong.png");
-  background-size: 100%;
+  background-size: cover;
 }
 body {
   margin: 0;
