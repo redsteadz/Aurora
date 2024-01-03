@@ -70,7 +70,7 @@
 .bottom_container{
     display: flex;
     justify-content: space-evenly;
-    height: 0vh;
+    height: fit-content;
     margin: 0;
     padding: 0;
 }
